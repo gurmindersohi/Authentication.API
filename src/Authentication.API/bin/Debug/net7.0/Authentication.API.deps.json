@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Authentication.API/1.0.0": {
         "dependencies": {
-          "Authentication.Abstractions": "1.0.0",
-          "Authentication.Core": "1.0.0",
+          "Authentication.Infrastructure": "1.0.0",
           "Authentication.Services": "1.0.0",
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
@@ -309,6 +308,12 @@
           "Microsoft.Extensions.Primitives": "7.0.0"
         }
       },
+      "Microsoft.Extensions.Configuration/7.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Primitives": "7.0.0"
+        }
+      },
       "Microsoft.Extensions.Configuration.Abstractions/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "7.0.0"
@@ -578,11 +583,6 @@
           "Authentication.Abstractions.dll": {}
         }
       },
-      "Authentication.Core/1.0.0": {
-        "runtime": {
-          "Authentication.Core.dll": {}
-        }
-      },
       "Authentication.Data/1.0.0": {
         "dependencies": {
           "Authentication.Domain": "1.0.0",
@@ -612,6 +612,18 @@
         },
         "runtime": {
           "Authentication.Domain.dll": {}
+        }
+      },
+      "Authentication.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Authentication.Services": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.2",
+          "Microsoft.EntityFrameworkCore.InMemory": "7.0.2",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "runtime": {
+          "Authentication.Infrastructure.dll": {}
         }
       },
       "Authentication.Services/1.0.0": {
@@ -875,6 +887,13 @@
       "sha512": "sha512-xpidBs2KCE2gw1JrD0quHE72kvCaI3xFql5/Peb2GRtUuZX+dYPoK/NTdVMiM67Svym0M0Df9A3xyU0FbMQhHw==",
       "path": "microsoft.extensions.caching.memory/7.0.0",
       "hashPath": "microsoft.extensions.caching.memory.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tldQUBWt/xeH2K7/hMPPo5g8zuLc3Ro9I5d4o/XrxvxOCA2EZBtW7bCHHTc49fcBtvB8tLAb/Qsmfrq+2SJ4vA==",
+      "path": "microsoft.extensions.configuration/7.0.0",
+      "hashPath": "microsoft.extensions.configuration.7.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration.Abstractions/7.0.0": {
       "type": "package",
@@ -1161,11 +1180,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Authentication.Core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Authentication.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -1177,6 +1191,11 @@
       "sha512": ""
     },
     "Authentication.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Authentication.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

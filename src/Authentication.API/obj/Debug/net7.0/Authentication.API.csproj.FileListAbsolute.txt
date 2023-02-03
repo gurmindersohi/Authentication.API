@@ -17,9 +17,6 @@
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/FluentValidation.dll
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/FluentValidation.AspNetCore.dll
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/FluentValidation.DependencyInjectionExtensions.dll
-/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/MediatR.dll
-/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/MediatR.Contracts.dll
-/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -44,8 +41,6 @@
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/System.Security.Permissions.dll
-/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Core.dll
-/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Core.pdb
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/staticwebassets/msbuild.Authentication.API.Microsoft.AspNetCore.StaticWebAssets.props
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/staticwebassets/msbuild.build.Authentication.API.props
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Authentication.API.props
@@ -70,3 +65,5 @@
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Data.pdb
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.DataTransferModels.pdb
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Domain.pdb
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Infrastructure.dll
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Infrastructure.pdb

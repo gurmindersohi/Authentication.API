@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "j+yh5lWl/vYnHoxtuBgJ73t29S9OUR9zknD97et6MRywLMvYzN5C1BXWVzavIvBiwMZxCwxdok2gWJF8hmq6dg==",
+  "dgSpecHash": "Cj7+WmGcWVaomZNELC5bpQZw6L/znzgd7Mx2ACwQPeI6Flpjl5TxB3/2Xe3MhFIUhTPQhCnwHlpTZbxVkLiCig==",
   "success": true,
   "projectFilePath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/Authentication.API.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "/Users/gurmindersingh/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/Users/gurmindersingh/.nuget/packages/microsoft.extensions.configuration/7.0.0/microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",

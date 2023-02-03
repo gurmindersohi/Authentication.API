@@ -83,11 +83,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Abstractions/Authentication.Abstractions.csproj": {
-                "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Abstractions/Authentication.Abstractions.csproj"
-              },
-              "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/Authentication.Core.csproj": {
-                "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/Authentication.Core.csproj"
+              "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Infrastructure/Authentication.Infrastructure.csproj": {
+                "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Infrastructure/Authentication.Infrastructure.csproj"
               },
               "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Services/Authentication.Services.csproj": {
                 "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Services/Authentication.Services.csproj"
@@ -157,59 +154,6 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/Authentication.Core.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/Authentication.Core.csproj",
-        "projectName": "Authentication.Core",
-        "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/Authentication.Core.csproj",
-        "packagesPath": "/Users/gurmindersingh/.nuget/packages/",
-        "outputPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/gurmindersingh/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -400,6 +344,81 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Infrastructure/Authentication.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Infrastructure/Authentication.Infrastructure.csproj",
+        "projectName": "Authentication.Infrastructure",
+        "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Infrastructure/Authentication.Infrastructure.csproj",
+        "packagesPath": "/Users/gurmindersingh/.nuget/packages/",
+        "outputPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gurmindersingh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Services/Authentication.Services.csproj": {
+                "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Services/Authentication.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

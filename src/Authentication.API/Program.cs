@@ -1,9 +1,8 @@
-﻿using Authentication.API.Config;
-using Microsoft.Extensions.Configuration;
-using MediatR;
+﻿using Microsoft.Extensions.Configuration;
 using System.Reflection;
 using Authentication.DataTransferModels.Authentication;
 using Authentication.Data.Extensions;
+using Authentication.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,9 +19,9 @@ var configuration = new ConfigurationBuilder()
     .Build();
 
 builder.Services.Configure<Token>(configuration.GetSection("token"));
-builder.Services.SetupIdentityDatabase(configuration);
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+builder.Services.SetupIdentityDatabase(configuration);
+builder.Services.AddAuthenticationServices();
 
 var app = builder.Build();
 

@@ -4,7 +4,6 @@
     using Authentication.API.Extensions;
     using Authentication.DataTransferModels.Authentication;
     using AutoMapper;
-    using MediatR;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;

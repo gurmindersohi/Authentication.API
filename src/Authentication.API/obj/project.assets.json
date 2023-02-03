@@ -578,6 +578,26 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Configuration/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Primitives": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.Configuration.Abstractions/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -1240,16 +1260,6 @@
           "bin/placeholder/Authentication.Abstractions.dll": {}
         }
       },
-      "Authentication.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/Authentication.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Authentication.Core.dll": {}
-        }
-      },
       "Authentication.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1294,6 +1304,23 @@
         },
         "runtime": {
           "bin/placeholder/Authentication.Domain.dll": {}
+        }
+      },
+      "Authentication.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Authentication.Services": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.2",
+          "Microsoft.EntityFrameworkCore.InMemory": "7.0.2",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Authentication.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Authentication.Infrastructure.dll": {}
         }
       },
       "Authentication.Services/1.0.0": {
@@ -2114,6 +2141,33 @@
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
         "microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration/7.0.0": {
+      "sha512": "tldQUBWt/xeH2K7/hMPPo5g8zuLc3Ro9I5d4o/XrxvxOCA2EZBtW7bCHHTc49fcBtvB8tLAb/Qsmfrq+2SJ4vA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Configuration.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.targets",
+        "lib/net462/Microsoft.Extensions.Configuration.dll",
+        "lib/net462/Microsoft.Extensions.Configuration.xml",
+        "lib/net6.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net6.0/Microsoft.Extensions.Configuration.xml",
+        "lib/net7.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net7.0/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -3255,11 +3309,6 @@
       "path": "../Authentication.Abstractions/Authentication.Abstractions.csproj",
       "msbuildProject": "../Authentication.Abstractions/Authentication.Abstractions.csproj"
     },
-    "Authentication.Core/1.0.0": {
-      "type": "project",
-      "path": "../Authentication.Core/Authentication.Core.csproj",
-      "msbuildProject": "../Authentication.Core/Authentication.Core.csproj"
-    },
     "Authentication.Data/1.0.0": {
       "type": "project",
       "path": "../Authentication.Data/Authentication.Data.csproj",
@@ -3275,6 +3324,11 @@
       "path": "../Authentication.Domain/Authentication.Domain.csproj",
       "msbuildProject": "../Authentication.Domain/Authentication.Domain.csproj"
     },
+    "Authentication.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Authentication.Infrastructure/Authentication.Infrastructure.csproj",
+      "msbuildProject": "../Authentication.Infrastructure/Authentication.Infrastructure.csproj"
+    },
     "Authentication.Services/1.0.0": {
       "type": "project",
       "path": "../Authentication.Services/Authentication.Services.csproj",
@@ -3283,8 +3337,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Authentication.Abstractions >= 1.0.0",
-      "Authentication.Core >= 1.0.0",
+      "Authentication.Infrastructure >= 1.0.0",
       "Authentication.Services >= 1.0.0",
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
@@ -3322,11 +3375,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Abstractions/Authentication.Abstractions.csproj": {
-              "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Abstractions/Authentication.Abstractions.csproj"
-            },
-            "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/Authentication.Core.csproj": {
-              "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/Authentication.Core.csproj"
+            "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Infrastructure/Authentication.Infrastructure.csproj": {
+              "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Infrastructure/Authentication.Infrastructure.csproj"
             },
             "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Services/Authentication.Services.csproj": {
               "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Services/Authentication.Services.csproj"

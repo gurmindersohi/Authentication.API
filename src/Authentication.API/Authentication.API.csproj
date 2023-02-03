@@ -26,33 +26,25 @@
     <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
     <None Remove="AutoMapper" />
     <None Remove="FluentValidation" />
-    <None Remove="Config\" />
     <None Remove="Microsoft.EntityFrameworkCore" />
     <None Remove="Microsoft.EntityFrameworkCore.InMemory" />
-    <None Remove="Infrastructure\" />
-    <None Remove="Infrastructure\ApiExceptions\" />
     <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
-    <None Remove="Infrastructure\Filters\" />
     <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
     <None Remove="FluentValidation.AspNetCore" />
     <None Remove="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Config\" />
-    <Folder Include="Infrastructure\" />
-    <Folder Include="Infrastructure\ApiExceptions\" />
-    <Folder Include="Infrastructure\Filters\" />
     <Folder Include="Extensions\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Authentication.Abstractions\Authentication.Abstractions.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
-    </ProjectReference>
     <ProjectReference Include="..\Authentication.Core\Authentication.Core.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
     <ProjectReference Include="..\Authentication.Services\Authentication.Services.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Authentication.Infrastructure\Authentication.Infrastructure.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>

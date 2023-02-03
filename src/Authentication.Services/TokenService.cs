@@ -37,14 +37,14 @@
         {
             if (!await IsValidUser(request.Username, request.Password))
             {
-                return new ServiceResponse<TokenResponse>("User is not valid!");
+                return new ServiceResponse<TokenResponse>("Invalid Username and/or Password. Please try again.");
             }
 
             ApplicationUser user = await GetUserByEmail(request.Username);
 
             if (user is null || !user.IsEnabled)
             {
-                return new ServiceResponse<TokenResponse>("User is not valid!");
+                return new ServiceResponse<TokenResponse>("Invalid Username and/or Password. Please try again.");
             }
 
             string role = (await _userManager.GetRolesAsync(user))[0];

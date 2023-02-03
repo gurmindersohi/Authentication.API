@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c/LxCx70NhtX0JD/NggDOiARYF4ewBcKsv6kOb/y+dzLU+w0wQc/A7niwIEYdQ+Xew/IyPk0dw2LWp2QZmBjYg==",
+  "dgSpecHash": "s6qysw4P/Yoc01e+aDEY17feU9ZXZakEDbHMAsm8biHdCGaaVx2YDxuDGd/M1EOFxdbZCJYxOt7G9g6yCwFpug==",
   "success": true,
   "projectFilePath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Infrastructure/Authentication.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "/Users/gurmindersingh/.nuget/packages/microsoft.entityframeworkcore/7.0.2/microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.2/microsoft.entityframeworkcore.abstractions.7.0.2.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.2/microsoft.entityframeworkcore.analyzers.7.0.2.nupkg.sha512",
+    "/Users/gurmindersingh/.nuget/packages/microsoft.entityframeworkcore.inmemory/7.0.2/microsoft.entityframeworkcore.inmemory.7.0.2.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.2/microsoft.entityframeworkcore.relational.7.0.2.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
