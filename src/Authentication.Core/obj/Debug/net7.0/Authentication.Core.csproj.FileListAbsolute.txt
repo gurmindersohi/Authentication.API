@@ -1,11 +1,11 @@
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/bin/Debug/net7.0/Authentication.Core.deps.json
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/bin/Debug/net7.0/Authentication.Core.dll
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/bin/Debug/net7.0/Authentication.Core.pdb
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/Debug/net7.0/Authentication.Core.csproj.AssemblyReference.cache
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/Debug/net7.0/Authentication.Core.GeneratedMSBuildEditorConfig.editorconfig
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/Debug/net7.0/Authentication.Core.AssemblyInfoInputs.cache
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/Debug/net7.0/Authentication.Core.AssemblyInfo.cs
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/Debug/net7.0/Authentication.Core.csproj.CoreCompileInputs.cache
-/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/bin/Debug/net7.0/Authentication.Core.deps.json
-/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/bin/Debug/net7.0/Authentication.Core.dll
-/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/bin/Debug/net7.0/Authentication.Core.pdb
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/Debug/net7.0/Authentication.Core.dll
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/Debug/net7.0/refint/Authentication.Core.dll
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/Debug/net7.0/Authentication.Core.pdb

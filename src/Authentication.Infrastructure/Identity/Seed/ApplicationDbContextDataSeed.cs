@@ -20,14 +20,14 @@
             await roleManager.CreateAsync(new IdentityRole(ApplicationIdentityConstants.Roles.Member));
 
             // New admin user
-            string adminUserName = "shawn@test.com";
+            string adminUserName = "gurminder@test.com";
             var adminUser = new ApplicationUser
             {
                 UserName = adminUserName,
                 Email = adminUserName,
                 IsEnabled = true,
                 EmailConfirmed = true,
-                FirstName = "Shawn",
+                FirstName = "Gurminder",
                 LastName = "Administrator"
             };
 
