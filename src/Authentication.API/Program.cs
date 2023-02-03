@@ -23,7 +23,6 @@ builder.Services.Configure<Token>(configuration.GetSection("token"));
 builder.Services.SetupIdentityDatabase(configuration);
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
-builder.Services.SetupMediatr();
 
 var app = builder.Build();
 

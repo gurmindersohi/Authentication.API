@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "imfG/r3RWMYu3XBJh8c2Z48HpT+dHhnrlIR1D97//n5hhU3yKnZ72PfoJ8OgvW6dqjMF4k7QuVO2XhpRUwRboQ==",
+  "dgSpecHash": "j+yh5lWl/vYnHoxtuBgJ73t29S9OUR9zknD97et6MRywLMvYzN5C1BXWVzavIvBiwMZxCwxdok2gWJF8hmq6dg==",
   "success": true,
   "projectFilePath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/Authentication.API.csproj",
   "expectedPackageFiles": [
@@ -9,9 +9,6 @@
     "/Users/gurmindersingh/.nuget/packages/fluentvalidation/11.4.0/fluentvalidation.11.4.0.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/fluentvalidation.aspnetcore/11.2.2/fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.2.1/fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
-    "/Users/gurmindersingh/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
-    "/Users/gurmindersingh/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
-    "/Users/gurmindersingh/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.0.0/mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.aspnetcore.authentication.cookies/2.2.0/microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
