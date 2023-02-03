@@ -10,6 +10,7 @@
     using System;
     using System.Threading;
     using System.Threading.Tasks;
+    using Authentication.Infrastructure.Identity.Services.Response;
 
     /// <summary>
     /// Authenticate
@@ -31,7 +32,7 @@
             /// <summary>
             /// Resource
             /// </summary>
-            public TokenResponse Resource { get; set; }
+            public ServiceResponse<TokenResponse> Resource { get; set; }
         }
 
         /// <summary>
@@ -93,7 +94,7 @@
 
                 string ipAddress = _httpContext.Connection.RemoteIpAddress.MapToIPv4().ToString();
 
-                TokenResponse tokenResponse = await _tokenService.Authenticate(command, ipAddress);
+                ServiceResponse<TokenResponse> tokenResponse = await _tokenService.Authenticate(command, ipAddress);
                 if (tokenResponse == null)
                 {
                     throw new InvalidCredentialsException();

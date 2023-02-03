@@ -2,6 +2,7 @@
 {
     using Authentication.Infrastructure.Identity.Models;
     using Authentication.Infrastructure.Identity.Models.Authentication;
+    using Authentication.Infrastructure.Identity.Services.Response;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.Extensions.Options;
@@ -12,7 +13,6 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    /// <inheritdoc cref="ITokenService" />
     public class TokenService : ITokenService
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
@@ -20,7 +20,6 @@
         private readonly Token _token;
         private readonly HttpContext _httpContext;
 
-        /// <inheritdoc cref="ITokenService" />
         public TokenService(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
@@ -33,8 +32,7 @@
             _httpContext = httpContextAccessor.HttpContext;
         }
 
-        /// <inheritdoc cref="ITokenService.Authenticate(TokenRequest, string)"/>
-        public async Task<TokenResponse> Authenticate(TokenRequest request, string ipAddress)
+        public async Task<ServiceResponse<TokenResponse>> Authenticate(TokenRequest request, string ipAddress)
         {
             if (await IsValidUser(request.Username, request.Password))
             {
@@ -47,11 +45,13 @@
 
                     await _userManager.UpdateAsync(user);
 
-                    return new TokenResponse(user, role, jwtToken);
+                    var response = new TokenResponse(user, role, jwtToken);
+
+                    return new ServiceResponse<TokenResponse>(response);
                 }
             }
 
-            return null;
+            return new ServiceResponse<TokenResponse>("User is not valid!"); ;
         }
 
         private async Task<bool> IsValidUser(string username, string password)

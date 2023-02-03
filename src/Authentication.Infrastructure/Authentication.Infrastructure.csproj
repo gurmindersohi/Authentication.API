@@ -19,6 +19,7 @@
     <None Remove="System.IdentityModel.Tokens.Jwt" />
     <None Remove="Identity\Models\Authentication\" />
     <None Remove="Identity\Services\" />
+    <None Remove="Identity\Services\Response\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Identity\" />
@@ -27,6 +28,7 @@
     <Folder Include="Identity\Seed\" />
     <Folder Include="Identity\Models\Authentication\" />
     <Folder Include="Identity\Services\" />
+    <Folder Include="Identity\Services\Response\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />

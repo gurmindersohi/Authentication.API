@@ -12,7 +12,7 @@
     /// </summary>
     [ApiController]
     [Route("api/[controller]")]
-    public class TokenController
+    public class TokenController : ControllerBase
     {
         private readonly IMediator _mediator;
 
@@ -37,10 +37,14 @@
         [ProducesResponseType(Microsoft.AspNetCore.Http.StatusCodes.Status200OK)]
         [ProducesResponseType(Microsoft.AspNetCore.Http.StatusCodes.Status400BadRequest)]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Post))]
-        public async Task<TokenResponse> AuthenticateAsync([FromBody] Authenticate.AuthenticateCommand command)
+        public async Task<IActionResult> AuthenticateAsync([FromBody] Authenticate.AuthenticateCommand command)
         {
             var response = await _mediator.Send(command);
-            return response.Resource;
+
+            if (!response.Resource.Success)
+                return BadRequest(response.Resource.Message);
+
+            return (IActionResult)response.Resource.Data;
         }
     }
 }
