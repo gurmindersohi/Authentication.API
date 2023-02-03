@@ -1,7 +1,7 @@
 ﻿namespace Authentication.API.Controllers
 {
+    using Authentication.API.Models.Token;
     using Authentication.Infrastructure.Identity.Models.Authentication;
-    using Authentication.WebAPI.Models.Token;
     using MediatR;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
