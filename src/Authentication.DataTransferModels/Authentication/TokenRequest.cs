@@ -9,6 +9,7 @@
         /// The username of the user logging in.
         /// </summary>
         [Required]
+        [StringLength(20)]
         [JsonProperty("username")]
         public string Username { get; set; }
 
@@ -16,6 +17,7 @@
         /// The password for the user logging in.
         /// </summary>
         [Required]
+        [StringLength(30)]
         [JsonProperty("password")]
         public string Password { get; set; }
     }

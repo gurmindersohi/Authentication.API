@@ -40,7 +40,7 @@
             if (!ModelState.IsValid)
                 return BadRequest(ModelState.GetErrorMessages());
 
-            var response = await _tokenService.Authenticate(tokenRequest, cancellationToken);
+            var response = await _tokenService.AuthenticateAsync(tokenRequest, cancellationToken);
 
             if (!response.Success)
                 return BadRequest(response.Message);

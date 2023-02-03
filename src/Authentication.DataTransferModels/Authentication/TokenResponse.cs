@@ -1,6 +1,6 @@
 ﻿namespace Authentication.DataTransferModels.Authentication
 {
-    using global::Authentication.Domain;
+    using Domain;
 
     public class TokenResponse
     {
