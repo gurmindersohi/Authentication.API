@@ -1,7 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
-using System.Reflection;
+﻿using Authentication.Data.Extensions;
 using Authentication.DataTransferModels.Authentication;
-using Authentication.Data.Extensions;
 using Authentication.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);

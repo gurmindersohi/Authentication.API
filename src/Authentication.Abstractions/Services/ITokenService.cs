@@ -5,7 +5,7 @@
 
     public interface ITokenService
     {
-        Task<ServiceResponse<TokenResponse>> Authenticate(TokenRequest request, CancellationToken cancellationToken);
+        Task<ServiceResponse<TokenResponse>> AuthenticateAsync(TokenRequest request, CancellationToken cancellationToken);
     }
 }
 

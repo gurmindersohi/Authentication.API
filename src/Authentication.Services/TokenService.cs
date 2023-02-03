@@ -33,24 +33,24 @@
             _httpContext = httpContextAccessor.HttpContext;
         }
 
-        public async Task<ServiceResponse<TokenResponse>> Authenticate(TokenRequest request, CancellationToken cancellationToken)
+        public async Task<ServiceResponse<TokenResponse>> AuthenticateAsync(TokenRequest request, CancellationToken cancellationToken)
         {
-            if (!await IsValidUser(request.Username, request.Password))
+            if (!await IsValidUser(request.Username, request.Password).ConfigureAwait(false))
             {
                 return new ServiceResponse<TokenResponse>("Invalid Username and/or Password. Please try again.");
             }
 
-            ApplicationUser user = await GetUserByEmail(request.Username);
+            var user = await GetUserByEmail(request.Username).ConfigureAwait(false);
 
             if (user is null || !user.IsEnabled)
             {
                 return new ServiceResponse<TokenResponse>("Invalid Username and/or Password. Please try again.");
             }
 
-            string role = (await _userManager.GetRolesAsync(user))[0];
-            string jwtToken = await GenerateJwtToken(user);
+            string role = (await _userManager.GetRolesAsync(user).ConfigureAwait(false))[0];
+            string jwtToken = await GenerateJwtToken(user).ConfigureAwait(false);
 
-            await _userManager.UpdateAsync(user);
+            await _userManager.UpdateAsync(user).ConfigureAwait(false);
 
             var response = new TokenResponse(user, role, jwtToken);
 
@@ -59,26 +59,24 @@
 
         private async Task<bool> IsValidUser(string username, string password)
         {
-            ApplicationUser user = await GetUserByEmail(username);
+            var user = await GetUserByEmail(username).ConfigureAwait(false);
 
-            if (user == null)
-            {
+            if (user is null)
                 return false;
-            }
 
-            SignInResult signInResult = await _signInManager.PasswordSignInAsync(user, password, true, false);
+            var signInResult = await _signInManager.PasswordSignInAsync(user, password, true, false).ConfigureAwait(false);
 
             return signInResult.Succeeded;
         }
 
         private async Task<ApplicationUser> GetUserByEmail(string email)
         {
-            return await _userManager.FindByEmailAsync(email);
+            return await _userManager.FindByEmailAsync(email).ConfigureAwait(false);
         }
 
         private async Task<string> GenerateJwtToken(ApplicationUser user)
         {
-            string role = (await _userManager.GetRolesAsync(user))[0];
+            string role = (await _userManager.GetRolesAsync(user).ConfigureAwait(false))[0];
             byte[] secret = Encoding.ASCII.GetBytes(_token.Secret);
 
             JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
