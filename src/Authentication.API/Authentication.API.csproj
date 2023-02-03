@@ -40,6 +40,7 @@
     <None Remove="Infrastructure\Filters\" />
     <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
     <None Remove="FluentValidation.AspNetCore" />
+    <None Remove="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -50,6 +51,7 @@
     <Folder Include="Infrastructure\Behaviours\" />
     <Folder Include="Infrastructure\ApiExceptions\" />
     <Folder Include="Infrastructure\Filters\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Authentication.Infrastructure\Authentication.Infrastructure.csproj">

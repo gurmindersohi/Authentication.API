@@ -1,4 +1,4 @@
-﻿namespace Authentication.Infrastructure.Identity.Services
+﻿namespace Authentication.Abstractions.Services
 {
     using Authentication.Infrastructure.Identity.Models.Authentication;
     using Authentication.Infrastructure.Identity.Services.Response;

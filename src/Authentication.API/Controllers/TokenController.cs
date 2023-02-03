@@ -1,50 +1,53 @@
 ﻿namespace Authentication.API.Controllers
 {
+    using Authentication.API.Extensions;
     using Authentication.API.Models.Token;
     using Authentication.Infrastructure.Identity.Models.Authentication;
+    using Authentication.Infrastructure.Identity.Services;
+    using AutoMapper;
     using MediatR;
     using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
+    using System.ComponentModel.DataAnnotations;
+    using System.Net.Mime;
     using System.Threading.Tasks;
 
-    /// <summary>
-    /// All token related actions.
-    /// </summary>
     [ApiController]
     [Route("api/[controller]")]
     public class TokenController : ControllerBase
     {
-        private readonly IMediator _mediator;
+        private readonly ITokenService _tokenService;
+        private readonly IMapper _mapper;
 
-        /// <summary>
-        /// ctor
-        /// </summary>
-        /// <param name="mediator"></param>
-        public TokenController(IMediator mediator)
+        public TokenController(
+            ITokenService tokenService,
+            IMapper mapper)
         {
-            _mediator = mediator;
+            _tokenService = tokenService;
+            _mapper = mapper;
         }
 
-        // POST: api/Token/Authenticate
-        /// <summary>
-        /// Validate that the user account is valid and return an auth token
-        /// to the requesting app for use in the api.
-        /// </summary>
-        /// <param name="command"></param>
-        /// <returns></returns>
         [AllowAnonymous]
-        [HttpPost("Authenticate")]
-        [ProducesResponseType(Microsoft.AspNetCore.Http.StatusCodes.Status200OK)]
-        [ProducesResponseType(Microsoft.AspNetCore.Http.StatusCodes.Status400BadRequest)]
+        [HttpPost(Name = nameof(Authenticate))]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+        [Consumes(MediaTypeNames.Application.Json, MediaTypeNames.Application.Xml)]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Post))]
-        public async Task<IActionResult> AuthenticateAsync([FromBody] Authenticate.AuthenticateCommand command)
+        public async Task<IActionResult> Authenticate(
+            [FromBody][Required] TokenRequest tokenRequest,
+            CancellationToken cancellationToken)
         {
-            var response = await _mediator.Send(command);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState.GetErrorMessages());
 
-            if (!response.Resource.Success)
-                return BadRequest(response.Resource.Message);
+            var response = await _tokenService.Authenticate(tokenRequest, cancellationToken);
 
-            return (IActionResult)response.Resource.Data;
+            if (!response.Success)
+                return BadRequest(response.Message);
+
+            return Ok(response.Data);
         }
     }
 }
