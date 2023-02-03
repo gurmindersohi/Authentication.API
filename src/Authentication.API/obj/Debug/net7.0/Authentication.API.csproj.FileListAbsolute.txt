@@ -45,8 +45,6 @@
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/System.Security.Permissions.dll
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Core.dll
-/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Infrastructure.dll
-/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Infrastructure.pdb
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Core.pdb
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/staticwebassets/msbuild.Authentication.API.Microsoft.AspNetCore.StaticWebAssets.props
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/staticwebassets/msbuild.build.Authentication.API.props
@@ -62,3 +60,13 @@
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/Authentication.API.pdb
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/Authentication.API.genruntimeconfig.cache
 /Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/ref/Authentication.API.dll
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Abstractions.dll
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Data.dll
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.DataTransferModels.dll
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Domain.dll
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Services.dll
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Abstractions.pdb
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Services.pdb
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Data.pdb
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.DataTransferModels.pdb
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/bin/Debug/net7.0/Authentication.Domain.pdb

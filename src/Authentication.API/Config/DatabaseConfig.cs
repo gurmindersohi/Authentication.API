@@ -3,6 +3,7 @@
     using Authentication.Abstractions.Services;
     using Authentication.Data.Contexts;
     using Authentication.Domain;
+    using Authentication.Services;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore;
 

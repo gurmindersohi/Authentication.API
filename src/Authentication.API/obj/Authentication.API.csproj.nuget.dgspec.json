@@ -85,6 +85,12 @@
             "projectReferences": {
               "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Abstractions/Authentication.Abstractions.csproj": {
                 "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Abstractions/Authentication.Abstractions.csproj"
+              },
+              "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/Authentication.Core.csproj": {
+                "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/Authentication.Core.csproj"
+              },
+              "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Services/Authentication.Services.csproj": {
+                "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Services/Authentication.Services.csproj"
               }
             }
           }
@@ -159,6 +165,59 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/Authentication.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/Authentication.Core.csproj",
+        "projectName": "Authentication.Core",
+        "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/Authentication.Core.csproj",
+        "packagesPath": "/Users/gurmindersingh/.nuget/packages/",
+        "outputPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gurmindersingh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -349,6 +408,87 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Services/Authentication.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Services/Authentication.Services.csproj",
+        "projectName": "Authentication.Services",
+        "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Services/Authentication.Services.csproj",
+        "packagesPath": "/Users/gurmindersingh/.nuget/packages/",
+        "outputPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Services/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gurmindersingh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Abstractions/Authentication.Abstractions.csproj": {
+                "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Abstractions/Authentication.Abstractions.csproj"
+              },
+              "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.DataTransferModels/Authentication.DataTransferModels.csproj": {
+                "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.DataTransferModels/Authentication.DataTransferModels.csproj"
+              },
+              "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Domain/Authentication.Domain.csproj": {
+                "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Domain/Authentication.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.26.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.26.0, )"
             }
           },
           "imports": [
