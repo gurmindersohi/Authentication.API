@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Identity\" />
+    <None Remove="Identity\Models\" />
+    <None Remove="Microsoft.AspNetCore.Identity" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <None Remove="Extensions\" />
+    <None Remove="Identity\Seed\" />
+    <None Remove="Microsoft.IdentityModel.Tokens" />
+    <None Remove="System.IdentityModel.Tokens.Jwt" />
+    <None Remove="Identity\Models\Authentication\" />
+    <None Remove="Identity\Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Identity\" />
+    <Folder Include="Identity\Models\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Identity\Seed\" />
+    <Folder Include="Identity\Models\Authentication\" />
+    <Folder Include="Identity\Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.26.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.26.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Authentication.Core\Authentication.Core.csproj" />
+  </ItemGroup>
+</Project>

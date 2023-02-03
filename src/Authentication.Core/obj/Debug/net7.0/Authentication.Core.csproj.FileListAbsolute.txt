@@ -1,0 +1,5 @@
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/Debug/net7.0/Authentication.Core.csproj.AssemblyReference.cache
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/Debug/net7.0/Authentication.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/Debug/net7.0/Authentication.Core.AssemblyInfoInputs.cache
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/Debug/net7.0/Authentication.Core.AssemblyInfo.cs
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/obj/Debug/net7.0/Authentication.Core.csproj.CoreCompileInputs.cache

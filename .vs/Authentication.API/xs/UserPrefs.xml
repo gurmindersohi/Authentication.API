@@ -1,4 +1,5 @@
 ﻿<Properties StartupConfiguration="{26AD1BC9-B389-473C-947B-F45B961D5F27}|https">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Authentication.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Authentication.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.Authentication.Core FirstBuild="True" />
 </Properties>

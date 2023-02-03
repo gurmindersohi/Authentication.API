@@ -1,0 +1,7 @@
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/Authentication.API.csproj.AssemblyReference.cache
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/Authentication.API.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/Authentication.API.AssemblyInfoInputs.cache
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/Authentication.API.AssemblyInfo.cs
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/Authentication.API.csproj.CoreCompileInputs.cache
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/Authentication.API.MvcApplicationPartsAssemblyInfo.cs
+/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.API/obj/Debug/net7.0/Authentication.API.MvcApplicationPartsAssemblyInfo.cache
