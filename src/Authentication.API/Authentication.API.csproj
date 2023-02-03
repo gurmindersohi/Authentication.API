@@ -26,8 +26,6 @@
     <None Remove="Controllers\" />
     <None Remove="MediatR" />
     <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
-    <None Remove="Models\" />
-    <None Remove="Models\Token\" />
     <None Remove="AutoMapper" />
     <None Remove="FluentValidation" />
     <None Remove="Config\" />
@@ -44,8 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-    <Folder Include="Models\Token\" />
     <Folder Include="Config\" />
     <Folder Include="Infrastructure\" />
     <Folder Include="Infrastructure\Behaviours\" />
@@ -54,7 +50,7 @@
     <Folder Include="Extensions\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Authentication.Infrastructure\Authentication.Infrastructure.csproj">
+    <ProjectReference Include="..\Authentication.Abstractions\Authentication.Abstractions.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>

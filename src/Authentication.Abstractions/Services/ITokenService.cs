@@ -1,7 +1,7 @@
 ﻿namespace Authentication.Abstractions.Services
 {
-    using Authentication.Infrastructure.Identity.Models.Authentication;
-    using Authentication.Infrastructure.Identity.Services.Response;
+    using Authentication.DataTransferModels.Authentication;
+    using Authentication.DataTransferModels.Response;
 
     public interface ITokenService
     {

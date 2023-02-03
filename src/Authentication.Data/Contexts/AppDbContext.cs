@@ -1,26 +1,23 @@
 ﻿namespace Authentication.Data.Contexts
 {
-    using Microsoft.AspNetCore.Identity;
-    using System.Collections.Generic;
-    using System.Runtime.Serialization;
+    using Authentication.Domain;
+    using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+    using Microsoft.EntityFrameworkCore;
 
-    public class AppDbContext
+    public partial class AppDbContext : IdentityDbContext<ApplicationUser>
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public bool IsEnabled { get; set; }
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options)
+        { }
 
-        [IgnoreDataMember]
-        public string FullName
+        protected override void OnModelCreating(ModelBuilder builder)
         {
-            get
-            {
-                return $"{FirstName} {LastName}";
-            }
-        }
+            base.OnModelCreating(builder);
 
-        //[JsonIgnore]
-        public List<RefreshToken> RefreshTokens { get; set; }
+            // Customize the ASP.NET Identity model and override the defaults if needed.
+            // For example, you can rename the ASP.NET Identity table names and more.
+            // Add your customizations after calling base.OnModelCreating(builder);
+        }
     }
 }
 

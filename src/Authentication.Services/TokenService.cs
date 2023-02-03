@@ -1,8 +1,9 @@
 ﻿namespace Authentication.Services
 {
-    using Authentication.Infrastructure.Identity.Models;
-    using Authentication.Infrastructure.Identity.Models.Authentication;
-    using Authentication.Infrastructure.Identity.Services.Response;
+    using Authentication.Abstractions.Services;
+    using Authentication.DataTransferModels.Authentication;
+    using Authentication.DataTransferModels.Response;
+    using Authentication.Domain;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.Extensions.Options;

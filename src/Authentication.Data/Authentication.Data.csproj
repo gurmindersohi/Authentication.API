@@ -9,11 +9,22 @@
   <ItemGroup>
     <None Remove="Contexts\" />
     <None Remove="Microsoft.AspNetCore.Identity" />
+    <None Remove="Seed\" />
+    <None Remove="Constants\" />
+    <None Remove="Extensions\" />
+    <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contexts\" />
+    <Folder Include="Seed\" />
+    <Folder Include="Constants\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Authentication.Domain\Authentication.Domain.csproj" />
   </ItemGroup>
 </Project>

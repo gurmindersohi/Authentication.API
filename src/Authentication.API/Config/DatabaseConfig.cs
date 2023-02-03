@@ -1,7 +1,8 @@
 ﻿namespace Authentication.API.Config
 {
-    using Authentication.Infrastructure.Identity.Models;
-    using Authentication.Infrastructure.Identity.Services;
+    using Authentication.Abstractions.Services;
+    using Authentication.Data.Contexts;
+    using Authentication.Domain;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore;
 
@@ -17,7 +18,7 @@
         /// <param name="configuration"></param>
         public static void SetupIdentityDatabase(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<AppDbContext>(options =>
                 //options.UseSqlServer(configuration.GetConnectionString("CleanArchitectureIdentity"))
                 options.UseInMemoryDatabase("CleanArchitectureIdentity")
                 );
@@ -26,7 +27,7 @@
                     .AddDefaultTokenProviders()
                     .AddUserManager<UserManager<ApplicationUser>>()
                     .AddSignInManager<SignInManager<ApplicationUser>>()
-                    .AddEntityFrameworkStores<ApplicationDbContext>();
+                    .AddEntityFrameworkStores<AppDbContext>();
             services.Configure<IdentityOptions>(
                 options =>
                 {

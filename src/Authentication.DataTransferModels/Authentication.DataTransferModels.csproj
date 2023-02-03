@@ -9,11 +9,17 @@
   <ItemGroup>
     <None Remove="Authentication\" />
     <None Remove="Newtonsoft.Json" />
+    <None Remove="Response\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Authentication\" />
+    <Folder Include="Response\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Authentication.Domain\Authentication.Domain.csproj" />
+    <ProjectReference Include="..\Authentication.Data\Authentication.Data.csproj" />
   </ItemGroup>
 </Project>

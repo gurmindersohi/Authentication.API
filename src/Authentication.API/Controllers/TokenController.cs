@@ -1,9 +1,8 @@
 ﻿namespace Authentication.API.Controllers
 {
+    using Authentication.Abstractions.Services;
     using Authentication.API.Extensions;
-    using Authentication.API.Models.Token;
-    using Authentication.Infrastructure.Identity.Models.Authentication;
-    using Authentication.Infrastructure.Identity.Services;
+    using Authentication.DataTransferModels.Authentication;
     using AutoMapper;
     using MediatR;
     using Microsoft.AspNetCore.Authorization;

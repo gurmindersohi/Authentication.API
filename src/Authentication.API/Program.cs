@@ -1,9 +1,9 @@
 ﻿using Authentication.API.Config;
-using Authentication.Infrastructure.Extensions;
-using Authentication.Infrastructure.Identity.Models.Authentication;
 using Microsoft.Extensions.Configuration;
 using MediatR;
 using System.Reflection;
+using Authentication.DataTransferModels.Authentication;
+using Authentication.Data.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
