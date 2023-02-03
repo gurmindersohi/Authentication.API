@@ -177,7 +177,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http/2.2.0": {
+      "Microsoft.AspNetCore.Http/2.2.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
@@ -408,6 +408,26 @@
         },
         "runtime": {
           "lib/net7.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Primitives": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Configuration.dll": {
             "related": ".xml"
           }
         },
@@ -972,14 +992,82 @@
           }
         }
       },
-      "Authentication.Core/1.0.0": {
+      "Authentication.Abstractions/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Authentication.DataTransferModels": "1.0.0"
+        },
         "compile": {
-          "bin/placeholder/Authentication.Core.dll": {}
+          "bin/placeholder/Authentication.Abstractions.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Authentication.Core.dll": {}
+          "bin/placeholder/Authentication.Abstractions.dll": {}
+        }
+      },
+      "Authentication.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Authentication.Domain": "1.0.0",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Authentication.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Authentication.Data.dll": {}
+        }
+      },
+      "Authentication.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Authentication.Data": "1.0.0",
+          "Authentication.Domain": "1.0.0",
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Authentication.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Authentication.DataTransferModels.dll": {}
+        }
+      },
+      "Authentication.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.2",
+          "Microsoft.EntityFrameworkCore": "7.0.2",
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Authentication.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Authentication.Domain.dll": {}
+        }
+      },
+      "Authentication.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Authentication.Abstractions": "1.0.0",
+          "Authentication.DataTransferModels": "1.0.0",
+          "Authentication.Domain": "1.0.0",
+          "Microsoft.AspNetCore.Http": "2.2.2",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.IdentityModel.Tokens": "6.26.0",
+          "System.IdentityModel.Tokens.Jwt": "6.26.0"
+        },
+        "compile": {
+          "bin/placeholder/Authentication.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Authentication.Services.dll": {}
         }
       }
     }
@@ -1127,16 +1215,16 @@
         "microsoft.aspnetcore.hosting.server.abstractions.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Http/2.2.0": {
-      "sha512": "YogBSMotWPAS/X5967pZ+yyWPQkThxhmzAwyCHCSSldzYBkW5W5d6oPfBaPqQOnSHYTpSOSOkpZoAce0vwb6+A==",
+    "Microsoft.AspNetCore.Http/2.2.2": {
+      "sha512": "BAibpoItxI5puk7YJbIGj95arZueM8B8M5xT1fXBn3hb3L2G3ucrZcYXv1gXdaroLbntUs8qeV8iuBrpjQsrKw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.http/2.2.0",
+      "path": "microsoft.aspnetcore.http/2.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.xml",
-        "microsoft.aspnetcore.http.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
         "microsoft.aspnetcore.http.nuspec"
       ]
     },
@@ -1396,6 +1484,33 @@
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
         "microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration/7.0.0": {
+      "sha512": "tldQUBWt/xeH2K7/hMPPo5g8zuLc3Ro9I5d4o/XrxvxOCA2EZBtW7bCHHTc49fcBtvB8tLAb/Qsmfrq+2SJ4vA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Configuration.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.targets",
+        "lib/net462/Microsoft.Extensions.Configuration.dll",
+        "lib/net462/Microsoft.Extensions.Configuration.xml",
+        "lib/net6.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net6.0/Microsoft.Extensions.Configuration.xml",
+        "lib/net7.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net7.0/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -2407,21 +2522,37 @@
         "version.txt"
       ]
     },
-    "Authentication.Core/1.0.0": {
+    "Authentication.Abstractions/1.0.0": {
       "type": "project",
-      "path": "../Authentication.Core/Authentication.Core.csproj",
-      "msbuildProject": "../Authentication.Core/Authentication.Core.csproj"
+      "path": "../Authentication.Abstractions/Authentication.Abstractions.csproj",
+      "msbuildProject": "../Authentication.Abstractions/Authentication.Abstractions.csproj"
+    },
+    "Authentication.Data/1.0.0": {
+      "type": "project",
+      "path": "../Authentication.Data/Authentication.Data.csproj",
+      "msbuildProject": "../Authentication.Data/Authentication.Data.csproj"
+    },
+    "Authentication.DataTransferModels/1.0.0": {
+      "type": "project",
+      "path": "../Authentication.DataTransferModels/Authentication.DataTransferModels.csproj",
+      "msbuildProject": "../Authentication.DataTransferModels/Authentication.DataTransferModels.csproj"
+    },
+    "Authentication.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Authentication.Domain/Authentication.Domain.csproj",
+      "msbuildProject": "../Authentication.Domain/Authentication.Domain.csproj"
+    },
+    "Authentication.Services/1.0.0": {
+      "type": "project",
+      "path": "../Authentication.Services/Authentication.Services.csproj",
+      "msbuildProject": "../Authentication.Services/Authentication.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Authentication.Core >= 1.0.0",
-      "Microsoft.AspNetCore.Identity >= 2.2.0",
-      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.2",
-      "Microsoft.EntityFrameworkCore >= 7.0.2",
-      "Microsoft.IdentityModel.Tokens >= 6.26.0",
-      "Newtonsoft.Json >= 13.0.2",
-      "System.IdentityModel.Tokens.Jwt >= 6.26.0"
+      "Authentication.Services >= 1.0.0",
+      "Microsoft.Extensions.Configuration >= 7.0.0",
+      "Microsoft.Extensions.DependencyInjection >= 7.0.0"
     ]
   },
   "packageFolders": {
@@ -2449,8 +2580,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/Authentication.Core.csproj": {
-              "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Core/Authentication.Core.csproj"
+            "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Services/Authentication.Services.csproj": {
+              "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Authentication.API/src/Authentication.Services/Authentication.Services.csproj"
             }
           }
         }
@@ -2465,29 +2596,13 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Identity": {
+          "Microsoft.Extensions.Configuration": {
             "target": "Package",
-            "version": "[2.2.0, )"
+            "version": "[7.0.0, )"
           },
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+          "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
-            "version": "[7.0.2, )"
-          },
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[7.0.2, )"
-          },
-          "Microsoft.IdentityModel.Tokens": {
-            "target": "Package",
-            "version": "[6.26.0, )"
-          },
-          "Newtonsoft.Json": {
-            "target": "Package",
-            "version": "[13.0.2, )"
-          },
-          "System.IdentityModel.Tokens.Jwt": {
-            "target": "Package",
-            "version": "[6.26.0, )"
+            "version": "[7.0.0, )"
           }
         },
         "imports": [
