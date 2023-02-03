@@ -8,7 +8,7 @@
     public class ApplicationDbContextDataSeed
     {
         /// <summary>
-        ///     Seed users and roles in the Identity database.
+        /// Seed users and roles in the Identity database.
         /// </summary>
         /// <param name="userManager">ASP.NET Core Identity User Manager</param>
         /// <param name="roleManager">ASP.NET Core Identity Role Manager</param>

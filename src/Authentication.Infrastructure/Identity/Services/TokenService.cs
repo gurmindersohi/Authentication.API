@@ -47,11 +47,7 @@
 
                     await _userManager.UpdateAsync(user);
 
-                    return new TokenResponse(user,
-                                             role,
-                                             jwtToken
-                                             //""//refreshToken.Token
-                                             );
+                    return new TokenResponse(user, role, jwtToken);
                 }
             }
 
@@ -64,7 +60,6 @@
 
             if (user == null)
             {
-                // Username or password was incorrect.
                 return false;
             }
 

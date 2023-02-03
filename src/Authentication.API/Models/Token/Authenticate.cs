@@ -12,36 +12,36 @@
     using System.Threading.Tasks;
 
     /// <summary>
-    ///     Authenticate
+    /// Authenticate
     /// </summary>
     public class Authenticate
     {
         /// <summary>
-        ///     command
+        /// command
         /// </summary>
         public class AuthenticateCommand : TokenRequest, IRequest<CommandResponse>
         {
         }
 
         /// <summary>
-        ///     Response
+        /// Response
         /// </summary>
         public class CommandResponse
         {
             /// <summary>
-            ///     Resource
+            /// Resource
             /// </summary>
             public TokenResponse Resource { get; set; }
         }
 
         /// <summary>
-        ///     Register Validation 
+        /// Register Validation 
         /// </summary>
         public class AuthenticateCommandValidator : AbstractValidator<AuthenticateCommand>
         {
 
             /// <summary>
-            ///     Validator ctor
+            /// Validator ctor
             /// </summary>
             public AuthenticateCommandValidator()
             {
@@ -57,7 +57,7 @@
         }
 
         /// <summary>
-        ///     Handler
+        /// Handler
         /// </summary>
         public class CommandHandler : IRequestHandler<AuthenticateCommand, CommandResponse>
         {
@@ -66,7 +66,7 @@
             private readonly HttpContext _httpContext;
 
             /// <summary>
-            ///     ctor
+            /// ctor
             /// </summary>
             /// <param name="tokenService"></param>
             /// <param name="mapper"></param>
@@ -82,7 +82,7 @@
             }
 
             /// <summary>
-            ///     Handle
+            /// Handle
             /// </summary>
             /// <param name="command"></param>
             /// <param name="cancellationToken"></param>

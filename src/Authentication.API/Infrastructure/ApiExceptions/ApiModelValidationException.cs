@@ -6,17 +6,17 @@
     using System.Linq;
 
     /// <summary>
-    ///     Api validation exception
+    /// Api validation exception
     /// </summary>
     public class ApiModelValidationException : Exception
     {
         /// <summary>
-        ///     Validation errors
+        /// Validation errors
         /// </summary>
         public IDictionary<string, string[]> Errors { get; }
 
         /// <summary>
-        ///     ctor
+        /// ctor
         /// </summary>
         public ApiModelValidationException()
             : base("One or more validation failures have occurred.")
@@ -25,7 +25,7 @@
         }
 
         /// <summary>
-        ///     ctor 
+        /// ctor 
         /// </summary>
         /// <param name="failures"></param>
         public ApiModelValidationException(IEnumerable<ValidationFailure> failures)

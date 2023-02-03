@@ -6,8 +6,7 @@
     using System.Threading.Tasks;
 
     /// <summary>
-    ///     MediatR pipeline behavior to handle any unhandled exception.
-    ///     For more information: https://github.com/jbogard/MediatR/wiki/Behaviors
+    /// MediatR pipeline behavior to handle any unhandled exception.
     /// </summary>
     /// <typeparam name="TRequest">The request object passed in through IMediator.Send.</typeparam>
     /// <typeparam name="TResponse"></typeparam>
@@ -15,7 +14,7 @@
         where TRequest : IRequest<TResponse>
     {
         /// <summary>
-        ///     ctor
+        /// ctor
         /// </summary>
         public UnhandledExceptionBehaviour()
         {

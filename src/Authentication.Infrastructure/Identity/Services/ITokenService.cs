@@ -3,12 +3,12 @@
     using Authentication.Infrastructure.Identity.Models.Authentication;
 
     /// <summary>
-    ///     A collection of token related services
+    /// A collection of token related services
     /// </summary>
     public interface ITokenService
     {
         /// <summary>
-        ///     Validate the credentials entered when logging in.
+        /// Validate the credentials entered when logging in.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="ipAddress"></param>

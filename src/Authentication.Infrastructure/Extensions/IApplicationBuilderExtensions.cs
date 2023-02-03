@@ -7,12 +7,12 @@
     using System.Threading.Tasks;
 
     /// <summary>
-    ///     Extension methods for IApplicationBuilder. 
+    /// Extension methods for IApplicationBuilder. 
     /// </summary>
     public static class IApplicationBuilderExtensions
     {
         /// <summary>
-        ///     Create Identity DB if not exist
+        /// Create Identity DB if not exist
         /// </summary>
         /// <param name="builder"></param>
         public static void EnsureIdentityDbIsCreated(this IApplicationBuilder builder)
@@ -30,7 +30,7 @@
         }
 
         /// <summary>
-        ///     Seed Identity data
+        /// Seed Identity data
         /// </summary>
         /// <param name="builder"></param>
         public static async Task SeedIdentityDataAsync(this IApplicationBuilder builder)

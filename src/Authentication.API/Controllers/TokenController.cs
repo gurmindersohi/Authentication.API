@@ -27,8 +27,8 @@
 
         // POST: api/Token/Authenticate
         /// <summary>
-        ///     Validate that the user account is valid and return an auth token
-        ///     to the requesting app for use in the api.
+        /// Validate that the user account is valid and return an auth token
+        /// to the requesting app for use in the api.
         /// </summary>
         /// <param name="command"></param>
         /// <returns></returns>

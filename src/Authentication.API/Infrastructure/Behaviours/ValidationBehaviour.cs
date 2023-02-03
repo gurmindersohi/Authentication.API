@@ -18,7 +18,7 @@
         private readonly IEnumerable<IValidator<TRequest>> _validators;
 
         /// <summary>
-        ///     ctor
+        /// ctor
         /// </summary>
         /// <param name="validators"></param>
         public ValidationBehaviour(IEnumerable<IValidator<TRequest>> validators)
@@ -27,7 +27,7 @@
         }
 
         /// <summary>
-        ///     pipeline handler
+        /// pipeline handler
         /// </summary>
         /// <param name="request"></param>
         /// <param name="cancellationToken"></param>

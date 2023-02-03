@@ -14,7 +14,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.SetupMediatr();
 var configuration = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
@@ -23,9 +22,7 @@ var configuration = new ConfigurationBuilder()
 builder.Services.Configure<Token>(configuration.GetSection("token"));
 builder.Services.SetupIdentityDatabase(configuration);
 builder.Services.AddHttpContextAccessor();
-
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
-
 builder.Services.SetupMediatr();
 
 var app = builder.Build();

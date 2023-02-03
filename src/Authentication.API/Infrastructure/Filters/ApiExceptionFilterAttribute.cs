@@ -14,7 +14,7 @@
         private readonly IDictionary<Type, Action<ExceptionContext>> _exceptionHandlers;
 
         /// <summary>
-        ///     ctor
+        /// ctor
         /// </summary>
         public ApiExceptionFilterAttribute()
         {
